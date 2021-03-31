@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Hà Ngọc Tú",
+        "tel": "0399443888",
+        "Permission": 1
+    },
+    {
+        "id": 2,
+        "name": "Trần Hồng Diệu",
+        "tel": "0399443888",
+        "Permission": 2
+    },
+    {
+        "id": 3,
+        "name": "Nguyễn Văn Trọng",
+        "tel": "0399443888",
+        "Permission": 3
+    },
+    {
+        "id": 4,
+        "name": "Phạm Đức Chung",
+        "tel": "0399443888",
+        "Permission": 1
+    }
+]
