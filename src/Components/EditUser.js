@@ -23,15 +23,13 @@ export default class EditUser extends Component {
 
   saveButton = () => {
     var date = new Date()
-    this.setState({
-      updated: this.state.updated += `${date.getFullYear()}/${date.getMonth()}/${date.getDate()}`
-    })
+    var  updated=  `${date.getFullYear()}/${date.getMonth()}/${date.getDate()}`
     var userEditInfo = {}
     userEditInfo.id = this.state.id
     userEditInfo.name = this.state.name
     userEditInfo.email = this.state.email
     userEditInfo.created = this.state.created
-    userEditInfo.updated = this.state.updated
+    userEditInfo.updated = updated
     userEditInfo.Permission = this.state.Permission
     this.props.userEditInfo(userEditInfo);
     this.props.isShowEditUserOfEdit();

@@ -22,10 +22,8 @@ export default class AddUser extends Component {
 
   onSubmit = () => {
     var date = new Date()
-    this.setState({
-      created: this.state.created += `${date.getFullYear()}/${date.getMonth()}/${date.getDate()}`
-    })
-    this.props.add(this.state.name, this.state.email, this.state.created, this.state.Permission)
+    var created = `${date.getFullYear()}/${date.getMonth()}/${date.getDate()}`
+    this.props.add(this.state.name, this.state.email, created, this.state.Permission)
     this.props.setHienThiForm()
   }
 
